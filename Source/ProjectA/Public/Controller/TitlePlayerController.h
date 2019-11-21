@@ -4,20 +4,20 @@
 
 #include "ProjectA.h"
 #include "GameFramework/PlayerController.h"
-#include "UIPlayerController.generated.h"
+#include "TitlePlayerController.generated.h"
 
 /**
  * 
  */
 UCLASS()
-class PROJECTA_API AUIPlayerController : public APlayerController
+class PROJECTA_API ATitlePlayerController : public APlayerController
 {
 	GENERATED_BODY()
 	
 protected:
 	virtual void BeginPlay() override;
 
-	UPROPERTY(EditDefaultsOnly, BlueprintReadWrite, Category=UI)
+	UPROPERTY(EditDefaultsOnly, BlueprintReadWrite, Category = UI)
 	TSubclassOf<class UUserWidget> UIWidgetClass;
 
 	UPROPERTY()

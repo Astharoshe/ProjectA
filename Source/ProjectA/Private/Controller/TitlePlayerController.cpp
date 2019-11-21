@@ -1,14 +1,13 @@
 // Fill out your copyright notice in the Description page of Project Settings.
 
 
-#include "UIPlayerController.h"
+#include "TitlePlayerController.h"
 #include "Blueprint/UserWidget.h"
 
-
-void AUIPlayerController::BeginPlay()
+void ATitlePlayerController::BeginPlay()
 {
 	Super::BeginPlay();
-	
+
 	CHECKASSERT(nullptr != UIWidgetClass);
 
 	UIWigetInstance = CreateWidget<UUserWidget>(this, UIWidgetClass);
