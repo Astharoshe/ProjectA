@@ -2,7 +2,7 @@
 
 #pragma once
 
-#include "CoreMinimal.h"
+#include "ProjectA.h"
 #include "GameFramework/Character.h"
 #include "BaseCharacter.generated.h"
 

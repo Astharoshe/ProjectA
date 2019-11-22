@@ -2,7 +2,7 @@
 
 #pragma once
 
-#include "CoreMinimal.h"
+#include "ProjectA.h"
 #include "Actor/NPCCharacter.h"
 #include "MonsterCharacter.generated.h"
 
