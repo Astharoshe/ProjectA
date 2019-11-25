@@ -77,6 +77,6 @@ Plugins/*/Intermediate/*
 DerivedDataCache/*
 
 # Content
-!AnimStarterPack/*
-!CraftResourcesIcons/*
-!InfinityBladeEffects/*
+AnimStarterPack/*
+CraftResourcesIcons/*
+InfinityBladeEffects/*
