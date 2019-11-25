@@ -77,6 +77,17 @@ Plugins/*/Intermediate/*
 DerivedDataCache/*
 
 # Content
-AnimStarterPack/*
-CraftResourcesIcons/*
-InfinityBladeEffects/*
+AnimStarterPack/
+CraftResourcesIcons/
+InfinityBladeEffects/
+Explosions/
+FXVarietyPack/
+GenericNPCAnimPack/
+MedievalDungeon/
+UE4_Mannequin_Mobile/
+Deaths/
+Source/FBX/
+Source/Maya/
+Source/Motionbuilder/
+Source/SKMannequin_A_Pose/
+Source/SKMannequin_T_Pose/

@@ -6,6 +6,10 @@
 #include "GameFramework/Character.h"
 #include "BaseCharacter.generated.h"
 
+
+class UInputComponent;
+
+
 UCLASS()
 class PROJECTA_API ABaseCharacter : public ACharacter
 {
@@ -24,6 +28,6 @@ public:
 	virtual void Tick(float DeltaTime) override;
 
 	// Called to bind functionality to input
-	virtual void SetupPlayerInputComponent(class UInputComponent* PlayerInputComponent) override;
+	virtual void SetupPlayerInputComponent(UInputComponent* PlayerInputComponent) override;
 
 };
