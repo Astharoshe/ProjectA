@@ -4,18 +4,18 @@
 
 #include "ProjectA.h"
 #include "Engine/GameInstance.h"
-#include "PAGameInstance.generated.h"
+#include "ProjectAGameInstance.generated.h"
 
 /**
  * 
  */
 UCLASS()
-class PROJECTA_API UPAGameInstance : public UGameInstance
+class PROJECTA_API UProjectAGameInstance : public UGameInstance
 {
 	GENERATED_BODY()
 	
 public:
-	UPAGameInstance();
+	UProjectAGameInstance();
 
 	virtual void Init() override;
 	

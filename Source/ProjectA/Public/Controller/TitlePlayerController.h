@@ -6,6 +6,7 @@
 #include "GameFramework/PlayerController.h"
 #include "TitlePlayerController.generated.h"
 
+class UUserWidget;
 /**
  * 
  */
@@ -18,7 +19,7 @@ protected:
 	virtual void BeginPlay() override;
 
 	UPROPERTY(EditDefaultsOnly, BlueprintReadWrite, Category = UI)
-	TSubclassOf<class UUserWidget> UIWidgetClass;
+	TSubclassOf<UUserWidget> UIWidgetClass;
 
 	UPROPERTY()
 	class UUserWidget* UIWigetInstance;

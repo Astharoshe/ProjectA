@@ -4,13 +4,13 @@
 
 #include "ProjectA.h"
 #include "GameFramework/PlayerState.h"
-#include "PAPlayerState.generated.h"
+#include "ProjectAPlayerState.generated.h"
 
 /**
  * 
  */
 UCLASS()
-class PROJECTA_API APAPlayerState : public APlayerState
+class PROJECTA_API AProjectAPlayerState : public APlayerState
 {
 	GENERATED_BODY()
 	

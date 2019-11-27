@@ -18,6 +18,21 @@ void ABaseCharacter::BeginPlay()
 	
 }
 
+void ABaseCharacter::OnAssetLoadInit()
+{
+
+}
+
+void ABaseCharacter::OnAssetLoadCompleted()
+{
+
+}
+
+void ABaseCharacter::PostInitializeComponents()
+{
+	Super::PostInitializeComponents();
+}
+
 // Called every frame
 void ABaseCharacter::Tick(float DeltaTime)
 {
@@ -25,10 +40,4 @@ void ABaseCharacter::Tick(float DeltaTime)
 
 }
 
-// Called to bind functionality to input
-void ABaseCharacter::SetupPlayerInputComponent(UInputComponent* PlayerInputComponent)
-{
-	Super::SetupPlayerInputComponent(PlayerInputComponent);
-
-}
 

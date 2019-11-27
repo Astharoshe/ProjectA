@@ -8,7 +8,8 @@
 
 
 class UInputComponent;
-
+class UCharacterStateComponent;
+class UWidgetComponent;
 
 UCLASS()
 class PROJECTA_API ABaseCharacter : public ACharacter
@@ -23,11 +24,23 @@ protected:
 	// Called when the game starts or when spawned
 	virtual void BeginPlay() override;
 
+	//
+	virtual void OnAssetLoadInit();
+	virtual void OnAssetLoadCompleted();
+
 public:	
+
+	virtual void PostInitializeComponents() override;
+
 	// Called every frame
 	virtual void Tick(float DeltaTime) override;
 
-	// Called to bind functionality to input
-	virtual void SetupPlayerInputComponent(UInputComponent* PlayerInputComponent) override;
 
+public:
+	UPROPERTY(VisibleAnywhere, Category = State)
+	UCharacterStateComponent* CharacterStateComponent;
+
+
+	UPROPERTY(VisibleAnywhere, Category = UI)
+	UWidgetComponent* HPBarWidgetComponent;
 };

@@ -2,7 +2,7 @@
 
 #pragma once
 
-#include "CoreMinimal.h"
+#include "ProjectA.h"
 #include "GameFramework/GameModeBase.h"
 #include "ProjectAGameModeBase.generated.h"
 
@@ -14,4 +14,16 @@ class PROJECTA_API AProjectAGameModeBase : public AGameModeBase
 {
 	GENERATED_BODY()
 	
+public:
+	AProjectAGameModeBase();
+
+	//
+	virtual void PostInitializeComponents() override;
+	
+	//
+	virtual void PostLogin(APlayerController* _NewPlayer) override;
+
+private:
+
+
 };

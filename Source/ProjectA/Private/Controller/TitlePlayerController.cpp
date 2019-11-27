@@ -3,6 +3,7 @@
 
 #include "TitlePlayerController.h"
 #include "Blueprint/UserWidget.h"
+#include "TitleWidget.h"
 
 void ATitlePlayerController::BeginPlay()
 {
