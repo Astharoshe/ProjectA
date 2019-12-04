@@ -17,11 +17,15 @@ class PROJECTA_API ATitlePlayerController : public APlayerController
 	
 protected:
 	virtual void BeginPlay() override;
+	virtual void EndPlay(const EEndPlayReason::Type _EndPlayReason) override;
+
+
+protected:
 
 	UPROPERTY(EditDefaultsOnly, BlueprintReadWrite, Category = UI)
 	TSubclassOf<UUserWidget> UIWidgetClass;
 
 	UPROPERTY()
-	class UUserWidget* UIWigetInstance;
+	UUserWidget* UIWigetInstance;
 	
 };

@@ -14,4 +14,15 @@ class PROJECTA_API AProjectAPlayerState : public APlayerState
 {
 	GENERATED_BODY()
 	
+public:
+	AProjectAPlayerState();
+
+public:
+	void InitPlayerData();
+	void SavePlayerData();
+
+private:
+
+public:
+	FString SaveSlotName;
 };

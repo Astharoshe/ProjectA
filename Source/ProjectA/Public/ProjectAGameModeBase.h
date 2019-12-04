@@ -6,6 +6,8 @@
 #include "GameFramework/GameModeBase.h"
 #include "ProjectAGameModeBase.generated.h"
 
+class AProjectAGameState;
+
 /**
  * 
  */
@@ -24,6 +26,7 @@ public:
 	virtual void PostLogin(APlayerController* _NewPlayer) override;
 
 private:
-
+	UPROPERTY()
+	AProjectAGameState* m_GameState;
 
 };

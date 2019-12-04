@@ -13,3 +13,12 @@ struct PROJECTA_API FBaseData : public FTableRowBase
 public:
 	FBaseData() {}
 };
+
+USTRUCT()
+struct PROJECTA_API FLevelData : public FTableRowBase
+{
+	GENERATED_USTRUCT_BODY();
+public:
+	FLevelData() {}
+
+};

@@ -22,3 +22,12 @@ void ATitlePlayerController::BeginPlay()
 
 	bShowMouseCursor = true;
 }
+
+void ATitlePlayerController::EndPlay(const EEndPlayReason::Type _EndPlayReason)
+{
+	Super::EndPlay(_EndPlayReason);
+
+	CHECKASSERT(nullptr != UIWigetInstance);
+
+	UIWigetInstance->RemoveFromViewport();
+}

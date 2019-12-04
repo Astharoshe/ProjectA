@@ -4,7 +4,13 @@
 
 #include "ProjectA.h"
 #include "Engine/GameInstance.h"
+#include "Engine/StreamableManager.h"
 #include "ProjectAGameInstance.generated.h"
+
+class UDataTable;
+
+struct FCharacterData;
+
 
 /**
  * 
@@ -19,4 +25,15 @@ public:
 
 	virtual void Init() override;
 	
+	FCharacterData* GetCharacterData(int32 _Level);
+	FStreamableManager* GetStreamableMgr();
+
+protected:
+	void LoadDataTable();
+
+protected:
+	UPROPERTY()
+	UDataTable* m_CharacterDataTable;
+
+	FStreamableManager m_StreamableMgr;
 };

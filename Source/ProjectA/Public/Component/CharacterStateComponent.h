@@ -6,6 +6,7 @@
 #include "Components/ActorComponent.h"
 #include "CharacterStateComponent.generated.h"
 
+struct FCharacterData;
 
 UCLASS( ClassGroup=(Custom), meta=(BlueprintSpawnableComponent) )
 class PROJECTA_API UCharacterStateComponent : public UActorComponent
@@ -19,10 +20,23 @@ public:
 protected:
 	// Called when the game starts
 	virtual void BeginPlay() override;
+	virtual void InitializeComponent() override;
 
 public:	
-	// Called every frame
-	virtual void TickComponent(float DeltaTime, ELevelTick TickType, FActorComponentTickFunction* ThisTickFunction) override;
+	void SetLevel(int32 _Level);
+	void SetDamage(float _Damage);
+	float GetDamage();
 
+	void SetHP(float _HP);
+	float GetHPRatio();
+	
+protected:
+	FCharacterData* m_StateData;
+
+	UPROPERTY(EditInstanceOnly, Category=State)
+	int32 m_Level;
+
+	UPROPERTY(Transient, VisibleInstanceOnly, Category=State)
+	float m_CurrentHP;
 		
 };

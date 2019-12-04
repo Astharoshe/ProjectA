@@ -25,4 +25,6 @@ public:
 	UPROPERTY(EditAnywhere, BlueprintReadWrite, Category = "CharacterData")
 	int32 Exp;
 
+	UPROPERTY(VisibleAnywhere, BlueprintReadOnly, Category = "CharacterData")
+	FString AssetPath;
 };
